@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="../website.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js" defer></script>
+    <!-- Hotjar Tracking Code for https://igl-ai-guidance.s3.eu-central-1.amazonaws.com/index.html -->
+<body>
+    <div class="header"></div>
+    <div class="container py-5">
+        <h1 class="headline">Persönliche Daten (Diese werden nicht gespeichert)</h1>
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <form id="formular">
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="inputCountry1">1. In welchem Land wohnst du?</label>
+                            <input type="text" class="form-control" id="inputCountry" placeholder="zB. Deutschland">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="inputHouse1">2. Wohnst du in einer Wohnung oder Haus?</label>
+                            <input type="text" class="form-control" id="inputHouse" placeholder="zB. Wohnung">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-6">
+                          <label for="inputPet">3. Hast du ein Haustier?</label>
+                          <input type="text" class="form-control" id="inputPet" placeholder="zB. Ja">
+                      </div>
+                      <div class="col-sm-6">
+                          <label for="inputHand">4. Bist du ein Rechtshänder?</label>
+                          <input type="text" class="form-control" id="inputHand" placeholder="zB. Ja">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="inputContactNumber">5. In welchem Bundesland lebst du?</label>
+                            <input type="text" class="form-control" id="inputBundesland" placeholder="zB. Thüringen">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="inputWebsite">6. Waren das leichte Fragen?</label>
+                            <input type="text" class="form-control" id="inputEasyQuestion" placeholder="zB. Ja">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                        <button type="button" id="nextButton" onclick="onNextPage()" class="button">Nächste Seite</button> 
+                        </div>
+                    </div>
+                   </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../script.js"></script>
+<script type="text/javascript" src="test-a.js"></script>
+</body>
+</html>
