@@ -71,7 +71,6 @@ if (userAgent.match(/chrome|chromium|crios/i)) {
 return browserName
 }
 
-//bei focus müssen wir noch herausfinden ob er über tab oder click gegangen ist 
 function listenerForFocusAndBlur(element) {
 ['focus', 'blur'].forEach(elementEvents => {
   element.addEventListener(elementEvents, event => {
@@ -92,7 +91,6 @@ function listenerForFocusAndBlur(element) {
 }
 
 //wenn jemand über ein Element hovert und drinnen ist 
-//wenn jemand über ein Element hovert und rausgeht --> denke wenn der Timestamp zu aneinnander ist --> einfach fallen lassen die Daten 
 function listenerForMouseOverAndOut(element) {
 ['mouseover', 'mouseout'].forEach(elementEvents => {
   element.addEventListener(elementEvents, event => {
@@ -133,7 +131,6 @@ function listenerForClick(element) {
     })
 }
 
-// hier müssen wir leider den Abstrich machen, dass Backspace nicht nur einmal gesendet wird sondern mehrere Male wenn man länger drauf bleibt.
 function listenerForKeyPress(element) {
 ['keydown'].forEach(elementEvents => {
   element.addEventListener(elementEvents, event => {
